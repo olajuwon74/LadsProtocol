@@ -89,7 +89,7 @@ contract CreditTracker{
     function calculateCollateral(address addr) view public returns (uint){
 
         addr = msg.sender;
-        if (cummulativeCredit(addr)` >= 80){
+        if (cummulativeCredit(addr) >= 80){
             return 1;
         }
         else{
